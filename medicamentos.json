@@ -1,0 +1,457 @@
+{
+    "vancomicina": {
+        "nome": "Vancomicina",
+        "classe": "Glicopeptídeo",
+        "farmacocinetica": {
+            "vd_L_kg": 0.7,
+            "protein_binding_percent": 55,
+            "renal_adjustment": "Sim. Ajustar dose conforme ClCr. Intervalos prolongados em IR.",
+            "obesos_pk": "Usar peso ajustado para dose inicial; monitorar AUC.",
+            "hepatopatas_pk": "Sem ajuste primário.",
+            "acido_ou_base": "Ácido fraco",
+            "pKa": 7.2,
+            "tissue_penetration": {
+                "pulmao": "Moderada",
+                "osso": "Boa",
+                "bhe": "Baixa (melhora com inflamação)",
+                "peritoneal": "Moderada",
+                "pleural": "Moderada",
+                "ocular": "Baixa IV, boa intravítrea",
+                "bile": "Baixa"
+            },
+            "clinical_notes": "Monitorar AUC/MIC 400–600; ajuste por TDM.",
+            "alerts": "Nefrotoxicidade e síndrome do homem vermelho."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "IDSA Obesity Dosing Guidelines",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "piperacilina_tazobactam": {
+        "nome": "Piperacilina/Tazobactam",
+        "classe": "Penicilina + Inibidor de Beta-lactamase",
+        "farmacocinetica": {
+            "vd_L_kg": 0.24,
+            "protein_binding_percent": 30,
+            "renal_adjustment": "Sim. Ajustar para ClCr < 40 mL/min.",
+            "obesos_pk": "Infusão estendida recomendada; aumentar exposição em obesos graves.",
+            "hepatopatas_pk": "Sem ajuste primário.",
+            "acido_ou_base": "Ácido fraco",
+            "pKa": 2.7,
+            "tissue_penetration": {
+                "pulmao": "Boa",
+                "osso": "Moderada",
+                "bhe": "Baixa",
+                "peritoneal": "Boa",
+                "pleural": "Boa",
+                "ocular": "Baixa",
+                "bile": "Moderada"
+            },
+            "clinical_notes": "Beta-lactâmico tempo-dependente; infusão prolongada otimiza T>MIC.",
+            "alerts": "Neurotoxicidade em IR."
+        },
+        "referencias": {
+            "vd": "Sanford Guide",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "IDSA Obesity Dosing Guidelines",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "meropenem": {
+        "nome": "Meropenem",
+        "classe": "Carbapenêmico",
+        "farmacocinetica": {
+            "vd_L_kg": 0.3,
+            "protein_binding_percent": 2,
+            "renal_adjustment": "Sim. Ajustar para ClCr < 50 mL/min.",
+            "obesos_pk": "Preferir infusão prolongada; pode requerer doses maiores em infecções graves.",
+            "hepatopatas_pk": "Sem ajuste primário.",
+            "acido_ou_base": "Ácido fraco",
+            "pKa": 2.9,
+            "tissue_penetration": {
+                "pulmao": "Boa",
+                "osso": "Moderada",
+                "bhe": "Boa com inflamação",
+                "peritoneal": "Excelente",
+                "pleural": "Boa",
+                "ocular": "Moderada",
+                "bile": "Moderada"
+            },
+            "clinical_notes": "Infusão prolongada melhora %T>MIC; cuidado em doses altas com IR (convulsões).",
+            "alerts": "Risco de convulsões em doses elevadas/IR."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "IDSA Obesity Guidelines",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "ceftriaxona": {
+        "nome": "Ceftriaxona",
+        "classe": "Cefalosporina 3G",
+        "farmacocinetica": {
+            "vd_L_kg": 0.15,
+            "protein_binding_percent": 85,
+            "renal_adjustment": "Geralmente não; excreção mista renal/biliar.",
+            "obesos_pk": "Pode precisar de ajuste em infecções graves.",
+            "hepatopatas_pk": "Cautela em doença hepática severa; monitorar bilirrubinas.",
+            "acido_ou_base": "Ácido fraco",
+            "pKa": 3.0,
+            "tissue_penetration": {
+                "pulmao": "Boa",
+                "osso": "Moderada",
+                "bhe": "Boa em meningite",
+                "peritoneal": "Boa",
+                "pleural": "Boa",
+                "ocular": "Moderada",
+                "bile": "Alta"
+            },
+            "clinical_notes": "Evitar em neonatos com hiperbilirrubinemia.",
+            "alerts": "Formação de precipitados biliares em uso prolongado."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "UpToDate",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "midazolam": {
+        "nome": "Midazolam",
+        "classe": "Benzodiazepínico",
+        "farmacocinetica": {
+            "vd_L_kg": 1.5,
+            "protein_binding_percent": 97,
+            "renal_adjustment": "Metabólitos podem acumular em IR; ajuste clinico conforme quadro.",
+            "obesos_pk": "Usar peso ideal ajustado; aumenta Vd em obesos.",
+            "hepatopatas_pk": "Reduzir dose e monitorar; metabolismo hepático importante.",
+            "acido_ou_base": "Base fraca",
+            "pKa": 6.2,
+            "tissue_penetration": {
+                "pulmao": "Alta",
+                "osso": "Baixa",
+                "bhe": "Alta",
+                "peritoneal": "Moderada",
+                "pleural": "Moderada",
+                "ocular": "Alta",
+                "bile": "Alta"
+            },
+            "clinical_notes": "Efeito prolongado em pacientes graves/sepse.",
+            "alerts": "Depressão respiratória; acumulação com infusão prolongada."
+        },
+        "referencias": {
+            "vd": "Lexicomp / Goodman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "UpToDate",
+            "obesos_pk": "IDSA Obesity Dosing",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "fentanil": {
+        "nome": "Fentanil",
+        "classe": "Opioide",
+        "farmacocinetica": {
+            "vd_L_kg": 4.0,
+            "protein_binding_percent": 80,
+            "renal_adjustment": "Geralmente não necessário; metabolitos se acumulam em IR grave.",
+            "obesos_pk": "Usar peso ideal para infusão; acumulação em tecido adiposo em uso prolongado.",
+            "hepatopatas_pk": "Reduzir dose em insuficiência hepática.",
+            "acido_ou_base": "Base fraca",
+            "pKa": 8.4,
+            "tissue_penetration": {
+                "pulmao": "Alta",
+                "osso": "Moderada",
+                "bhe": "Alta",
+                "peritoneal": "Moderada",
+                "pleural": "Moderada",
+                "ocular": "Alta",
+                "bile": "Alta"
+            },
+            "clinical_notes": "Acúmulo em infusões prolongadas; monitorar sedação.",
+            "alerts": "Depressão respiratória."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Lexicomp",
+            "obesos_pk": "UpToDate",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "noradrenalina": {
+        "nome": "Noradrenalina",
+        "classe": "Catecolamina vasopressora",
+        "farmacocinetica": {
+            "vd_L_kg": 0.2,
+            "protein_binding_percent": 25,
+            "renal_adjustment": "Não necessário.",
+            "obesos_pk": "Usar peso ideal.",
+            "hepatopatas_pk": "Sem ajuste primário.",
+            "acido_ou_base": "Base fraca",
+            "pKa": 8.6,
+            "tissue_penetration": {
+                "pulmao": "Baixa",
+                "osso": "Baixa",
+                "bhe": "Baixa",
+                "peritoneal": "Baixa",
+                "pleural": "Baixa",
+                "ocular": "Baixa",
+                "bile": "Baixa"
+            },
+            "clinical_notes": "Curta meia-vida; administração IV contínua.",
+            "alerts": "Isquemia periférica em doses altas."
+        },
+        "referencias": {
+            "vd": "DrugBank / Goodman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Lexicomp",
+            "obesos_pk": "UpToDate",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Goodman & Gilman",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "amicacina": {
+        "nome": "Amicacina",
+        "classe": "Aminoglicosídeo",
+        "farmacocinetica": {
+            "vd_L_kg": 0.25,
+            "protein_binding_percent": 0,
+            "renal_adjustment": "Sim. Ajuste rigoroso conforme ClCr.",
+            "obesos_pk": "Usar peso ajustado (PBW + 0.4*(ABW - PBW)).",
+            "hepatopatas_pk": "Sem ajuste primário; ascite aumenta Vd.",
+            "acido_ou_base": "Base fraca",
+            "pKa": 8.6,
+            "tissue_penetration": {
+                "pulmao": "Baixa",
+                "osso": "Baixa",
+                "bhe": "Muito baixa",
+                "peritoneal": "Moderada (maior em ascite)",
+                "pleural": "Baixa",
+                "ocular": "Baixa",
+                "bile": "Baixa"
+            },
+            "clinical_notes": "Concentração-dependente; dose única diária muitas vezes utilizada.",
+            "alerts": "Nefro e ototoxicidade."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "IDSA Obesity Dosing",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "linezolida": {
+        "nome": "Linezolida",
+        "classe": "Oxazolidinona",
+        "farmacocinetica": {
+            "vd_L_kg": 0.7,
+            "protein_binding_percent": 30,
+            "renal_adjustment": "Geralmente não requer ajuste; monitorar em IR grave.",
+            "obesos_pk": "VD aumenta; avaliar TDM se disponível.",
+            "hepatopatas_pk": "Cautela; metabolismo pode ser afetado.",
+            "acido_ou_base": "Base fraca",
+            "pKa": 7.4,
+            "tissue_penetration": {
+                "pulmao": "Boa",
+                "osso": "Boa",
+                "bhe": "Moderada",
+                "peritoneal": "Boa",
+                "pleural": "Boa",
+                "ocular": "Moderada",
+                "bile": "Moderada"
+            },
+            "clinical_notes": "Usada em infecções por Gram-positivos; risco de mielossupressão em uso prolongado.",
+            "alerts": "Mielossupressão; interações com serotonérgicos."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman / Sanford",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Lexicomp",
+            "obesos_pk": "UpToDate",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "polimixina_b": {
+        "nome": "Polimixina B",
+        "classe": "Polimixina (antibiótico catiônico)",
+        "farmacocinetica": {
+            "vd_L_kg": 0.1,
+            "protein_binding_percent": 60,
+            "renal_adjustment": "Ajustes complexos; monitorar toxicidade (principalmente nefrotoxicidade).",
+            "obesos_pk": "Dados limitados; cuidado e monitorização.",
+            "hepatopatas_pk": "Dados limitados.",
+            "acido_ou_base": "Não facilmente classificado",
+            "pKa": null,
+            "tissue_penetration": {
+                "pulmao": "Moderada",
+                "osso": "Moderada",
+                "bhe": "Baixa",
+                "peritoneal": "Moderada",
+                "pleural": "Moderada",
+                "ocular": "Baixa",
+                "bile": "Moderada"
+            },
+            "clinical_notes": "Uso em infecções multirresistentes; monitorar função renal.",
+            "alerts": "Nefrotoxicidade e neurotoxicidade."
+        },
+        "referencias": {
+            "vd": "Sanford Guide / DrugBank",
+            "protein_binding": "DrugBank",
+            "pKa": "N/A",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "Literatura limitada",
+            "hepatopatas_pk": "Literatura limitada",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "fluconazol": {
+        "nome": "Fluconazol",
+        "classe": "Azólico",
+        "farmacocinetica": {
+            "vd_L_kg": 0.6,
+            "protein_binding_percent": 12,
+            "renal_adjustment": "Sim. Reduzir dose em ClCr < 50 mL/min.",
+            "obesos_pk": "Aumentar dose com base em mg/kg em infecções graves.",
+            "hepatopatas_pk": "Cautela; hepatotoxicidade possível.",
+            "acido_ou_base": "Neutro",
+            "pKa": 1.8,
+            "tissue_penetration": {
+                "pulmao": "Excelente",
+                "osso": "Boa",
+                "bhe": "Excelente",
+                "peritoneal": "Excelente",
+                "pleural": "Excelente",
+                "ocular": "Excelente",
+                "bile": "Boa"
+            },
+            "clinical_notes": "Alta biodisponibilidade oral; boa penetração tecidual.",
+            "alerts": "Interações via CYP; risco de prolongamento de QT."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "IDSA Guidance",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "micafungina": {
+        "nome": "Micafungina",
+        "classe": "Equinocandina",
+        "farmacocinetica": {
+            "vd_L_kg": 0.2,
+            "protein_binding_percent": 99,
+            "renal_adjustment": "Não necessário.",
+            "obesos_pk": "Pode exigir doses maiores em obesidade severa.",
+            "hepatopatas_pk": "AUC pode aumentar em insuficiência hepática; monitorar.",
+            "acido_ou_base": "Neutro",
+            "pKa": null,
+            "tissue_penetration": {
+                "pulmao": "Boa",
+                "osso": "Moderada",
+                "bhe": "Muito baixa",
+                "peritoneal": "Boa",
+                "pleural": "Moderada",
+                "ocular": "Baixa",
+                "bile": "Alta"
+            },
+            "clinical_notes": "Excelente atividade contra Candida; baixa penetração urinária e SNC.",
+            "alerts": "Aumento de transaminases."
+        },
+        "referencias": {
+            "vd": "Sanford Guide",
+            "protein_binding": "DrugBank",
+            "pKa": "N/A",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "Dados limitados",
+            "hepatopatas_pk": "Sanford Guide / Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    },
+    "aciclovir": {
+        "nome": "Aciclovir",
+        "classe": "Antiviral (nucleosídeo)",
+        "farmacocinetica": {
+            "vd_L_kg": 0.6,
+            "protein_binding_percent": 15,
+            "renal_adjustment": "Sim. Ajustar em ClCr reduzido; risco de cristalúria sem hidratação.",
+            "obesos_pk": "Usar peso ajustado para IV; clearance não aumenta proporcionalmente.",
+            "hepatopatas_pk": "Sem ajuste primário.",
+            "acido_ou_base": "Base fraca",
+            "pKa": 2.3,
+            "tissue_penetration": {
+                "pulmao": "Boa",
+                "osso": "Moderada",
+                "bhe": "Moderada",
+                "peritoneal": "Moderada",
+                "pleural": "Moderada",
+                "ocular": "Alta tópico / moderada IV",
+                "bile": "Moderada"
+            },
+            "clinical_notes": "Hidratação para prevenir cristalúria; ajustar dose em IR.",
+            "alerts": "Neurotoxicidade em idosos e IR."
+        },
+        "referencias": {
+            "vd": "Goodman & Gilman",
+            "protein_binding": "DrugBank",
+            "pKa": "DrugBank",
+            "renal_adjustment": "Sanford Guide",
+            "obesos_pk": "UpToDate",
+            "hepatopatas_pk": "Lexicomp",
+            "tissue_penetration": "Sanford Guide",
+            "clinical_notes": "UpToDate",
+            "alerts": "Lexicomp"
+        }
+    }
+}
