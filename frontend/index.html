@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Busca de Medicamentos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 8px;
+            background: #f2f2f2;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Busca de Medicamentos</h1>
+
+    <input id="campoBusca" placeholder="Digite o nome do medicamento..." oninput="buscar()" />
+
+    <div id="resultado"></div>
+
+    <script>
+        async function buscar() {
+            const termo = document.getElementById("campoBusca").value;
+            const resultado = document.getElementById("resultado");
+
+            if (!termo) {
+                resultado.innerHTML = "";
+                return;
+            }
+
+            try {
+                const res = await fetch(`http://localhost:8000/buscar?nome=${termo}`);
+                if (!res.ok) {
+                    resultado.innerHTML = "<p>Nenhum medicamento encontrado.</p>";
+                    return;
+                }
+
+                const dados = await res.json();
+
+                resultado.innerHTML = `
+          <div class="card">
+            <h2>${dados.nome}</h2>
+            <p><strong>Classe:</strong> ${dados.classe}</p>
+            <p><strong>Vd:</strong> ${dados.vd}</p>
+            <p><strong>Ligação Proteica:</strong> ${dados.ligacao_proteica}</p>
+            <p><strong>Ajuste Renal:</strong> ${dados.ajuste_renal}</p>
+          </div>
+        `;
+            } catch (e) {
+                resultado.innerHTML = `<p>Erro ao buscar.</p>`;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
