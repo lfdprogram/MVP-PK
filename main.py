@@ -6,6 +6,16 @@ from models import DecisaoDoseInput, MedicationDatabase
 
 app = FastAPI()
 
+
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "message": "UTI PK Helper API online",
+        "endpoints": ["/lista", "/buscar", "/decisao-dose", "/docs"],
+    }
+
+
 # Carrega o banco na inicialização
 with open("medicamentos.json", "r", encoding="utf-8") as f:
     raw = json.load(f)

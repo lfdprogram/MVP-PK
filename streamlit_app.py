@@ -2,7 +2,9 @@
 import requests
 import streamlit as st
 
-API_URL = "http://127.0.0.1:8000"
+#API_URL = "http://127.0.0.1:8000"
+API_URL = "https://mvp-pk.onrender.com"
+
 
 st.set_page_config(page_title="UTI PK Helper", layout="centered")
 st.title("UTI PK Helper – Decisão de Dose")
