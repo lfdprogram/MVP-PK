@@ -97,9 +97,9 @@ if submitted:
             # SÍTIO
             texto_sitio = data.get("resumo_sitio", "") or ""
             if "baixa" in texto_sitio.lower() or "sem dado" in texto_sitio.lower():
-                st.warning(f"**Sítio infeccioso**\n\n{texto_sitio}")
+                st.warning(f"**Penetração no sítio infeccioso**\n\n{texto_sitio}")
             else:
-                st.info(f"**Sítio infeccioso**\n\n{texto_sitio}")
+                st.info(f"**Penetração no sítio infeccioso**\n\n{texto_sitio}")
 
             # NOTAS CLÍNICAS
             st.markdown("**Notas clínicas**")
