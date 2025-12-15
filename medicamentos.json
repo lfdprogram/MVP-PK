@@ -89,7 +89,7 @@
                 "ocular": "Moderada",
                 "bile": "Moderada"
             },
-            "clinical_notes": "Infusão prolongada melhora %T>MIC; cuidado em doses altas com IR (convulsões).",
+            "clinical_notes": "Infusão prolongada melhora %T>MIC. A estabilidade do meropenem é limitada após diluição. A infusão prolongada não deve ultrapassar 3h.",
             "alerts": "Risco de convulsões em doses elevadas/IR."
         },
         "referencias": {
